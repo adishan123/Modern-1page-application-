@@ -1,0 +1,19 @@
+@media(max-width: 600px)
+{
+    .toggle{
+        display: block;
+    }
+    .container{
+        padding: 15px 5px;
+    }
+    #bg1 header nav{
+         ul{
+            display: none;
+        }
+    }
+    #bg1 header .header{flex-direction: row;}
+    .content,.flex1{flex-direction: column; text-align: center;}
+    .content .left h3{font-size: 18px;}
+    #bg1 header .header{flex-direction: row;}
+    #counter .counterbox{flex-direction: row; width: 100%; margin-bottom: 30px;}
+}

@@ -1,0 +1,35 @@
+#value{
+    @extend .p50;
+    text-align: center;
+    h4{
+        color: $blue;
+    }
+    h2{
+        font-size: 35px;
+        font-weight: 700;
+        color: $dblue;
+    }
+    .fbox{
+        box-shadow: 0px 0px 5px #ccc;
+        padding: 20px;
+        margin: 20px;
+        transition: 0.9s;
+        img{
+            width: 100%;
+            transition: 0.5s;
+            transform: scale(0.9);
+        }
+        &:hover{
+            box-shadow: 0px 0px 10px #ccc;
+        }
+        &:hover{
+            img{
+                transform: scale(0.5);
+            }
+        }
+    }
+    h3{
+        color: $dblue;
+        font-size: 23px;
+    }
+}

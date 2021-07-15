@@ -1,0 +1,49 @@
+#testimonials{
+    @extend .p50;
+    text-align: center;
+    .testimonials-box{
+        box-shadow: 0px 0px 20px #ccc;
+        padding: 20px;
+        margin: 40px 20px;
+        .star{
+            color: orange;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            margin: 50px 0px;
+            margin: auto;
+        }
+    }
+}
+.owl-item.active > div:after {
+    opacity: 1;
+  }
+  .owl-item.center > div:after {
+    opacity: 1;
+  }
+  .owl-item.active.center > div:after {
+    
+  }
+ 
+    .owl-item.active{
+        opacity: 0.5;
+    }
+    .owl.-item.active.center{
+        opacity: 1;
+        background-color: red;
+    }
+    .owl-item.center{
+        opacity: 1;
+    }
+    .owl-carousel button.owl-dot{
+        border: 1px solid $dblue;
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        border-radius: 50%;
+    }
+    button.owl-dot.active{
+        background: $dblue;    
+    } 

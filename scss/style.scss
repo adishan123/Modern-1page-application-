@@ -1,0 +1,16 @@
+@import 'var';
+@import 'extend';
+@import 'banner';
+@import 'about';
+@import 'value';
+@import 'counter';
+@import 'test';
+@import 'team';
+@import 'resp';
+@import 'blog';
+body{
+    font-family: 'Nunito', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}

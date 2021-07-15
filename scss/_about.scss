@@ -1,0 +1,28 @@
+#about{
+    @extend .p50;
+    .left{
+        flex-basis: 50%;
+        background: #f6f9ff;
+        padding: 40px;
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            color: #4154f1;
+            text-transform: uppercase;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            color: $dblue;
+            }
+            p{
+                padding: 15px 0;
+            }   
+    }
+    .right{
+        flex-basis: 50%;
+        img{
+            width: 100%;
+        }
+    }
+}

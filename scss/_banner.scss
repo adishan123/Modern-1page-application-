@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+max-width: 1170px;
+margin: auto;
+}
+#bg1{
+    background: url(../img/hero-bg.png);
+    height: 100vh;
+    //background-position: left center;
+    background-size: cover;
+    header{
+        .header{@extend .flex1;
+        }
+        padding: 15px 0;
+    }
+    .logo{
+        font-size: 30px;
+        @extend .fc;
+    }
+        nav{
+            ul{
+                display: flex;
+                list-style: none;
+                li{
+                    &:last-child{
+                        a{
+                            background: $blue;
+                            padding: 8px 20px;
+                            color: #fff;
+                            border-radius: 4px;
+                        }
+                    }
+                    a{
+                        @extend .fc;
+                        text-decoration: none;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+            .active{
+                a{
+                    color: $blue;
+                }
+            } 
+        }
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1{
+   transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  .toggle{
+      display: none;
+  }
+  .content{
+     @extend .flex1;
+     .left{
+         flex-basis: 47%;
+         h3{
+            font-size: 48px;
+            color: $dblue;
+            font-weight: 800;
+         }
+         p{
+            padding: 20px 0;
+            font-size: 26px;
+            font-weight: 500;
+            color: #444444;
+         }
+     }
+  }
+
+  .arrow{
+      display: none;
+      background: $blue;
+      width: 35px;
+      height: 35px;
+      line-height: 45px;
+      text-align: center;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+        a{
+            color: #fff
+        }
+  }
+  #mobilemenu{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      background-color: #fff;
+      z-index: 9999;
+      display: none;
+      text-align: center;
+      ul{
+          list-style: none;
+          li{
+              display: block;
+              a{
+                  text-decoration: none;
+                  color: $dblue;
+                  line-height: 45px;
+              }
+          }
+      }
+  }

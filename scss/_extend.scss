@@ -1,0 +1,38 @@
+.fc{
+    font-weight: 700;
+    color: $dblue;
+}
+.flex1{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.btn{
+    background: $blue;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 0px 5px 25px #afabab;
+    i{
+        transform: translate(10px,0);
+        transition: .9s;
+    }
+    &:hover{
+        i{
+            transform: translate(20px,0);
+        }
+    }
+}
+.p50{
+    padding: 50px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 99;
+    box-shadow: 0px 2px 20px #ccc;
+    width: 100%;
+
+}

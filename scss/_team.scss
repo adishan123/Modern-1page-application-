@@ -1,0 +1,49 @@
+#team{
+    text-align: center;
+    @extend .p50;
+    overflow: hidden;
+    .team{
+        flex-basis: 22%;
+        
+        .teambox{
+        background: #fff;
+        box-shadow: 0px 0px 5px #ccc;
+        position: relative;
+        transition: 0.9s;
+        top: 20px;
+        .teamimg{
+            position: relative;
+            img{
+                width: 100%;
+            }
+            &:after{ 
+                background: url(https://bootstrapmade.com/demo/templates/FlexStart/assets/img/team-shape.svg);
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50px;
+            }
+        }
+            &:hover{
+                .social{
+                    right: 8px;
+                }
+            }
+    .social{
+        width: 50px;
+        height: 150px;
+        background-color: #fff;
+        opacity: 0.6;
+        position: absolute;
+        top: 20px;
+        right: -50px;
+        transition: 0.9s;
+    } 
+    &:hover{
+        transform: scale(1.1);
+    } 
+}
+}
+}
